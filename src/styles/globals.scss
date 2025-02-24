@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geist:wght@100..900&display=swap');
+
+* {
+    font-family: "Geist", serif;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    cursor: none;
+}
+
+:root {
+    --color-primary: #f2f2f2;
+    --color-secondary: #000000;
+    --color-tertiary: #aaaaaa;
+    --color-accent: #4bd6fb;
+    --color-light: #ffffff;
+    --color-error: #ff0033;
+    --color-background: rgba(225, 225, 225, 0.08);
+    --color-border: rgba(225, 225, 225, 0.2);
+    --color-footer: #101010;
+}
+
+body {
+    margin: 0;
+    user-select: none;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
