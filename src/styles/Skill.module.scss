@@ -1,15 +1,14 @@
 .skills {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-   gap: 12px;
+   gap: 1rem;
 
-   p {
+   .skill {
       font-size: 14px;
-      margin: 0;
       padding: 10px 20px;
+      text-align: center;
       background-color: var(--color-background);
       outline: 1px solid var(--color-border);
       border-radius: 10px;
-      text-align: center;
    }
 }

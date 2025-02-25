@@ -3,31 +3,28 @@
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
    grid-template-rows: auto auto;
    justify-items: center;
-   gap: 15px;
+   gap: 1rem;
 
    .projectCard {
       position: relative;
       display: flex;
       align-items: center;
       height: 25px;
-      width: 170px;
-      padding: 15px;
+      width: 150px;
+      padding: 1rem;
       background-color: var(--color-background);
       outline: 1px solid var(--color-border);
       border-radius: 100px;
       transition: .3s ease-in-out;
 
-      p {
-         font-weight: 400;
-      }
-
       .arrowUp {
          position: absolute;
-         right: 15px;
+         right: 1rem;
          width: 20px;
          height: 20px;
          color: rgba(225, 225, 225, 0.6);
          transition: .3s ease-in-out;
+         transform: rotate(45deg);
       }
 
       &:hover {
@@ -36,7 +33,7 @@
 
          svg {
             color: var(--color-accent);
-            transform: rotate(45deg);
+            transform: rotate(0deg);
          }
       }
    }

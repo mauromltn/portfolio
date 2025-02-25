@@ -5,12 +5,12 @@ function Skill() {
       <>
       <h1>Skills:</h1>
         <div className={styles.skills}>
-          <p>Swift</p>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>   
-          <p>React</p>
-          <p>Figma</p>
+          <div className={styles.skill}>Swift</div>
+          <div className={styles.skill}>HTML</div>
+          <div className={styles.skill}>CSS</div>
+          <div className={styles.skill}>JavaScript</div>   
+          <div className={styles.skill}>React</div>
+          <div className={styles.skill}>Figma</div>
         </div>
       </>
    )
