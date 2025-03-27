@@ -1,0 +1,16 @@
+/* Stato iniziale: i caratteri sono spostati e trasparenti */
+.brand span:nth-child(n+2) {
+   margin-left: -0.135em;
+   opacity: 0;
+   transition: margin-left 0.3s ease-in, opacity 0.3s ease-in;
+   transition-delay: calc(0.1s * (12 - var(--i)));
+}
+
+/* Stato hover e focus */
+.brand:hover span:nth-child(n+2),
+.brand:focus span:nth-child(n+2) {
+   margin-left: 0;
+   opacity: 1;
+   transition: margin-left 0.3s ease-out, opacity 0.3s ease-out;
+   transition-delay: calc(0.1s * (var(--i) - 1));
+}
