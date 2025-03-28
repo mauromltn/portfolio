@@ -3,7 +3,54 @@
    margin-left: -0.035em;
    opacity: 0;
    transition: margin-left 0.3s ease-in, opacity 0.3s ease-in;
-   transition-delay: calc(0.1s * (12 - var(--i)));
+}
+
+.brand span:nth-child(13) {
+   transition-delay: 0s;
+}
+
+.brand span:nth-child(12) {
+   transition-delay: 0.02s;
+}
+
+.brand span:nth-child(11) {
+   transition-delay: 0.04s;
+}
+
+.brand span:nth-child(10) {
+   transition-delay: 0.06s;
+}
+
+.brand span:nth-child(9) {
+   transition-delay: 0.08s;
+}
+
+.brand span:nth-child(8) {
+   transition-delay: 0.1s;
+}
+
+.brand span:nth-child(7) {
+   transition-delay: 0.12s;
+}
+
+.brand span:nth-child(6) {
+   transition-delay: 0.14s;
+}
+
+.brand span:nth-child(5) {
+   transition-delay: 0.16s;
+}
+
+.brand span:nth-child(4) {
+   transition-delay: 0.18s;
+}
+
+.brand span:nth-child(3) {
+   transition-delay: 0.2s;
+}
+
+.brand span:nth-child(2) {
+   transition-delay: 0.22s;
 }
 
 /* Stato hover e focus */
@@ -12,5 +59,52 @@
    margin-left: 0;
    opacity: 1;
    transition: margin-left 0.3s ease-out, opacity 0.3s ease-out;
-   transition-delay: calc(0.1s * (var(--i) - 1));
+}
+
+.brand:hover span:nth-child(2) {
+   transition-delay: 0s;
+}
+
+.brand:hover span:nth-child(3) {
+   transition-delay: 0.02s;
+}
+
+.brand:hover span:nth-child(4) {
+   transition-delay: 0.04s;
+}
+
+.brand:hover span:nth-child(5) {
+   transition-delay: 0.06s;
+}
+
+.brand:hover span:nth-child(6) {
+   transition-delay: 0.08s;
+}
+
+.brand:hover span:nth-child(7) {
+   transition-delay: 0.1s;
+}
+
+.brand:hover span:nth-child(8) {
+   transition-delay: 0.12s;
+}
+
+.brand:hover span:nth-child(9) {
+   transition-delay: 0.14s;
+}
+
+.brand:hover span:nth-child(10) {
+   transition-delay: 0.16s;
+}
+
+.brand:hover span:nth-child(11) {
+   transition-delay: 0.18s;
+}
+
+.brand:hover span:nth-child(12) {
+   transition-delay: 0.2s;
+}
+
+.brand:hover span:nth-child(13) {
+   transition-delay: 0.22s;
 }
