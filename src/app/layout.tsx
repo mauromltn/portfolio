@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "@/lib/fonts";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Mauro Montane",
@@ -18,8 +18,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased`}
       >
-        <Analytics />
         {children}
+        <Analytics />
       </body>
     </html>
   );
