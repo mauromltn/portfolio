@@ -1,11 +1,11 @@
-import { TbMenu } from 'react-icons/tb';
 import styles from './Header.module.css';
+import Menu from '../Menu';
 
 export default function Header() {
    return (
-      <header className="fixed w-full p-4 z-10 select-none">
-         <div className="flex justify-between items-center">
-            <button className={`${styles.brand} text-xl font-medium`}>
+      <header className="fixed w-full p-4 z-20 select-none">
+         <div className="flex justify-between items-end">
+            <button className={`${styles.brand} text-xl font-medium leading-none`}>
                <span>M</span>
                <span>a</span>
                <span>u</span>
@@ -20,9 +20,8 @@ export default function Header() {
                <span>n</span>
                <span>e</span>
             </button>
-            <div>
-               <TbMenu />
-            </div>
+
+            <Menu />
          </div>
       </header>
    )
