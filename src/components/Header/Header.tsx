@@ -4,25 +4,23 @@ import Menu from '../Menu';
 export default function Header() {
    return (
       <header className="fixed w-full p-4 z-20 select-none">
-         <div className="flex justify-between items-end">
-            <button className={`${styles.brand} text-xl font-medium leading-none`}>
-               <span>M</span>
-               <span>a</span>
-               <span>u</span>
-               <span>r</span>
-               <span>o</span>
-               <span> </span>
-               <span>M</span>
-               <span>o</span>
-               <span>n</span>
-               <span>t</span>
-               <span>a</span>
-               <span>n</span>
-               <span>e</span>
-            </button>
+         <button className={`${styles.brand} text-xl font-medium leading-none`}>
+            <span>M</span>
+            <span>a</span>
+            <span>u</span>
+            <span>r</span>
+            <span>o</span>
+            <span> </span>
+            <span>M</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>n</span>
+            <span>e</span>
+         </button>
 
-            <Menu />
-         </div>
+         <Menu />
       </header>
    )
 }
