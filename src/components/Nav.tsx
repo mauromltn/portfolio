@@ -36,7 +36,7 @@ export default function Nav() {
                <div key={i} className="perspective-normal perspective-origin-right">
                   <motion.div
                      custom={i}
-                     className="flex py-1"
+                     className="flex py-2"
                      variants={perspective}
                      initial="initial"
                      animate="enter"
