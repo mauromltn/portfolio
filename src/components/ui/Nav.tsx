@@ -29,7 +29,7 @@ const perspective = {
 
 export default function Nav() {
   return (
-    <div className="flex items-center justify-center h-full px-5 text-black text-xl">
+    <div className="flex items-center justify-center h-full px-5 text-white text-xl">
       <div className="top">
          {
             navLinks.map((link, i) => (

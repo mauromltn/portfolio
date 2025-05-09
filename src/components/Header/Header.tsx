@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import Menu from '../Menu';
+import Menu from '../ui/Menu';
 
 export default function Header() {
    return (

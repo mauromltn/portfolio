@@ -1,6 +1,6 @@
 'use client';
 import { useState } from "react";
-import Button from "./ui/Button";
+import Button from "./Button";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav";
 
@@ -26,7 +26,7 @@ export default function Menu() {
   return (
     <div className="fixed top-4 right-4">
       <motion.div
-        className="relative w-40 h-70 bg-white rounded-2xl"
+        className="relative w-40 h-70 bg-foreground rounded-2xl"
         variants={variants}
         initial="closed"
         animate={isActive ? "open" : "closed"}
