@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://mauromontane.tech",
     images: [
       {
-        url: "https://mauromontane.com/public/og-image.png",
+        url: "https://mauromontane.tech/public/og-image.png",
         width: 1470,
         height: 920,
         alt: "Mauro Montane Portfolio",
