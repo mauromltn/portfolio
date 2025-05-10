@@ -6,6 +6,21 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   title: "Mauro Montane",
   description: "Developer who cares about crafting beautiful things.",
+  openGraph: {
+    title: "Mauro Montane",
+    description: "Developer who cares about crafting beautiful things.",
+    url: "https://mauromontane.tech",
+    images: [
+      {
+        url: "https://mauromontane.com/public/og-image.png",
+        width: 1470,
+        height: 920,
+        alt: "Mauro Montane Portfolio",
+      },
+    ],
+    locale: "it_IT",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
