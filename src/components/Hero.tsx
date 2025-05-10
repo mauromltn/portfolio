@@ -1,23 +1,23 @@
-import { TextGenerateEffectDemo } from "./Text/HeroText";
-import { ViewReveal } from "./ui/ViewReveal";
+import { HeroText } from "./ui/ViewReveal/HeroText";
+import { CAT } from "./ui/ViewReveal/CAT";
 
 export default function Hero() {
    return (
-      <main className='flex flex-col justify-center w-250 mt-30'>
-         <TextGenerateEffectDemo />
-         <ViewReveal>
+      <main className='flex flex-col justify-center max-w-250 mt-20 sm:mt-30 px-6 lg:px-0'>
+         <HeroText />
+         <CAT>
             <a
                href="mailto:dev.montane@gmail.com"
-               className='bg-white ring ring-neutral-300 font-semibold py-4 px-5 rounded-full hover:shadow-[0px_8px_12px_0px_rgba(0,0,0,0.105)] hover:scale-101 duration-200'
+               className='w-fit bg-white ring ring-neutral-300 text-sm sm:text-base font-semibold text-center py-4.5 px-5 rounded-full hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-hover duration-200 ease-out'
             >
-               Get in touch
+               Get in Touch
             </a>
 
-            <div className='flex gap-3 items-center'>
-               <div className='bg-[#12C971] rounded-full w-3 h-3'></div>
+            <div className='flex gap-2 sm:gap-3 items-center'>
+               <div className='bg-[#12C971] rounded-full w-2.5 h-2.5 sm:w-3 sm:h-3'></div>
                <p className='text-[#088046] font-medium'>Open to New Opportunities</p>
             </div>
-         </ViewReveal>
+         </CAT>
       </main>
    )
 }
