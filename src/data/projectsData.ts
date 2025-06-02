@@ -1,22 +1,22 @@
 export const projectsData = [
    {
       title: "CineMood",
-      src: "",
-      color: "#EFE8D3"
+      src: "/projects/cinemood.png",
+      color: "#f1faee"
    },
    {
       title: "Planix",
-      src: "",
-      color: "#000000"
+      src: "/projects/planix.png",
+      color: "#e63946"
    },
    {
       title: "Trasvelo",
-      src: "",
-      color: "#706D63"
+      src: "/projects/trasvelo.png",
+      color: "#a8dadc"
    },
    {
       title: "Portfolio",
-      src: "",
-      color: "#8C8C8C"
+      src: "/projects/portfolio.png",
+      color: "#e5e5e5"
    }
 ]

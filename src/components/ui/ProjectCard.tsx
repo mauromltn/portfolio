@@ -1,4 +1,3 @@
-import React from 'react'
 import { ProjectCardProps } from '../../lib/types'
 
 export default function ProjectCard({ index, title, setModal }: ProjectCardProps) {
