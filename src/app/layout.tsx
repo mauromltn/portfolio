@@ -3,6 +3,7 @@ import "./globals.css";
 import { inter } from "@/lib/fonts";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Footer from "@/components/ui/Footer";
 
 export const metadata: Metadata = {
   title: "Mauro Montane",
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={`${inter.className} antialiased`}
       >
         {children}
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>
