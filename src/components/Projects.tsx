@@ -11,7 +11,7 @@ export default function Projects() {
 
    return (
       <>
-         <RevealAnimation className='w-full px-5 md:w-250 m-auto mt-30 mb-20 md:mt-50 md:mb-40 select-none'>
+         <RevealAnimation className='w-full px-5 md:max-w-220 lg:w-250 m-auto mt-30 mb-20 lg:mt-50 lg:mb-40 select-none'>
             {
                projectsData.map((project, index) => {
                   return (

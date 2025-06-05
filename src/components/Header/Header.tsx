@@ -3,7 +3,7 @@ import Menu from '../ui/Menu';
 
 export default function Header() {
    return (
-      <header className="fixed w-full p-4 z-20 select-none">
+      <header className="fixed w-full p-4 z-20 backdrop-blur-sm lg:backdrop-blur-none  select-none">
          <button className={`${styles.brand} text-xl font-medium leading-none`}>
             <span>M</span>
             <span>a</span>

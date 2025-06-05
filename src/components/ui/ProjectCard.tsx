@@ -7,8 +7,8 @@ export default function ProjectCard({ index, title, setModal }: ProjectCardProps
          onMouseEnter={() => setModal({ active: true, index })}
          onMouseLeave={() => setModal({ active: false, index })}
       >
-         <h2 className="text-2xl md:text-6xl group-hover:translate-x-2.5 duration-200 group-active:translate-x-2.5">{title}</h2>
-         <p className='text-xs md:text-base font-light group-hover:-translate-x-2.5 duration-200 group-active:-translate-x-2.5'>Design & Development</p>
+         <h2 className="text-2xl lg:text-6xl group-hover:translate-x-2.5 duration-200 group-active:translate-x-2.5">{title}</h2>
+         <p className='text-xs lg:text-base font-light group-hover:-translate-x-2.5 duration-200 group-active:-translate-x-2.5'>Design & Development</p>
       </div>
    )
 }

@@ -3,7 +3,7 @@ import { RevealAnimation } from "./ui/ViewReveal/RevealAnimation";
 
 export default function Hero() {
    return (
-      <main className='flex flex-col justify-center max-w-250 mt-20 sm:mt-30 px-6 lg:px-0'>
+      <main className='flex flex-col justify-center max-w-220 xl:max-w-250 mt-20 sm:mt-30 px-6 lg:px-0'>
          <HeroText />
          <RevealAnimation className="flex flex-col sm:flex-row gap-9 sm:items-center">
             <a

@@ -2,11 +2,11 @@ import Link from "next/link"
 import Image from "next/image";
 import { Github, Linkedin, Mail } from "lucide-react"
 import { BsThreads } from "react-icons/bs";
-import { RevealAnimation } from "./ViewReveal/RevealAnimation";
+import { PageAnimation } from "./ViewReveal/PageAnimation";
 
 export default function Footer() {
    return (
-      <RevealAnimation>
+      <PageAnimation>
          <footer className="border-t border-stone-200">
             <div className="max-w-6xl mx-auto px-6 py-16">
                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -98,6 +98,6 @@ export default function Footer() {
                </div>
             </div>
          </footer>
-      </RevealAnimation>
+      </PageAnimation>
    )
 }
