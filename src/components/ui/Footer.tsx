@@ -15,7 +15,7 @@ export default function Footer() {
                      <div className="mb-6">
                         <div className="flex items-center gap-3 mb-3">
                            <Image
-                              src={"../../icon.svg"}
+                              src={"/icon.svg"}
                               alt="Logo"
                               width={30}
                               height={30}

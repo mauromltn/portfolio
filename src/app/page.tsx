@@ -1,11 +1,11 @@
-import Header from "@/components/Header/Header";
+import Menu from "@/components/ui/Menu/Menu";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
-    <Header />
+    <Menu />
     <Hero />
     <Projects />
     </div>
