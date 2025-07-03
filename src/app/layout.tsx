@@ -4,6 +4,7 @@ import { inter } from "@/lib/fonts";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Footer from "@/components/ui/Footer";
+import { ReactLenis } from 'lenis/react'
 
 export const metadata: Metadata = {
   title: "Mauro Montane",
@@ -25,16 +26,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} antialiased`}
-      >
+      <body className={`${inter.className} antialiased`}>
+        <ReactLenis root />
         {children}
         <Footer />
         <Analytics />
