@@ -24,7 +24,7 @@ export default function Menu() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="fixed top-4 right-4">
+    <div className="fixed top-4 right-4 z-10">
       <motion.div
         className="relative w-40 h-70 bg-foreground rounded-2xl"
         variants={variants}

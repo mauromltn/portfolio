@@ -1,4 +1,4 @@
-import { ProjectCardProps } from '../../lib/types'
+import { ProjectCardProps } from '../../../lib/types'
 
 export default function ProjectCard({ index, title, setModal }: ProjectCardProps) {
    return (
