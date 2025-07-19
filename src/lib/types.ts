@@ -20,4 +20,5 @@ export interface ProjectDetails {
   mockup: StaticImageData;
   title: string;
   type: string;
+  link: string;
 }

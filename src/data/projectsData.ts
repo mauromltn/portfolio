@@ -1,7 +1,7 @@
-import cinemoodMockup from '../../public/projects/cinemood-mockup.png';
-import planixMockup from '../../public/projects/planix-mockup.png';
-import trasveloMockup from '../../public/projects/trasvelo-mockup.png';
-import portfolioMockup from '../../public/projects/portfolio-mockup.png';
+import cinemoodMockup from '../../public/projects/cinemood-mockup.webp';
+import planixMockup from '../../public/projects/planix-mockup.webp';
+import trasveloMockup from '../../public/projects/trasvelo-mockup.webp';
+import portfolioMockup from '../../public/projects/portfolio-mockup.webp';
 
 export const projectsData = [
    {
@@ -26,7 +26,7 @@ export const projectsData = [
       src: "/projects/planix.png",
       mockup: planixMockup,
       color: "#e63946",
-      link: "https://planix.vercel.app"
+      link: "/notavailable"
    },
    {
       title: "Portfolio",
