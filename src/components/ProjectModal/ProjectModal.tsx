@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { ProjectModalProps } from '../../../lib/types'
+import { ProjectModalProps } from '../../lib/types'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { gsap } from 'gsap'

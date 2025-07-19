@@ -1,6 +1,7 @@
 export interface ProjectCardProps {
   index: number;
   title: string;
+  link: string;
   setModal: React.Dispatch<React.SetStateAction<{ active: boolean; index: number }>>;
 }
 

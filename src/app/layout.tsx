@@ -3,6 +3,7 @@ import "./globals.css";
 import { inter } from "@/lib/fonts";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Menu from "@/components/ui/Menu/Menu";
 import Footer from "@/components/ui/Footer";
 import { ReactLenis } from 'lenis/react'
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <ReactLenis root />
+        <Menu />
         {children}
         <Footer />
         <Analytics />

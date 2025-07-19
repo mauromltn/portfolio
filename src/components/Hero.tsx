@@ -8,7 +8,7 @@ export default function Hero() {
          <RevealAnimation className="flex flex-col sm:flex-row gap-9 sm:items-center">
             <a
                href="mailto:dev.montane@gmail.com"
-               className='w-fit bg-white ring ring-neutral-300 text-sm sm:text-base font-semibold text-center py-4.5 px-5 rounded-full hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-hover duration-200 ease-out'
+               className='w-fit bg-white border border-neutral-300 text-sm sm:text-base font-semibold text-center py-4.5 px-5 rounded-full hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-hover duration-200 ease-out'
             >
                Get in Touch
             </a>

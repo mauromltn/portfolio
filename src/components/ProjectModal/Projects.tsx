@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
-import { projectsData } from '../../../data/projectsData'
-import { RevealAnimation } from '../ViewReveal/RevealAnimation'
+import { projectsData } from '../../data/projectsData'
+import { RevealAnimation } from '../ui/ViewReveal/RevealAnimation'
 import ProjectCard from './ProjectCard'
 import ProjectModal from './ProjectModal'
 
@@ -19,8 +19,8 @@ export default function Projects() {
                         key={index}
                         index={index}
                         title={project.title}
+                        link={project.link}
                         setModal={setModal}
-                        
                      />
                   )
                })
