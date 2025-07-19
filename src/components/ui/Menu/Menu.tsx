@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Button from "./Button";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav";
@@ -22,9 +22,24 @@ const variants = {
 export default function Menu() {
 
   const [isActive, setIsActive] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node) && isActive) {
+        setIsActive(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isActive]);
 
   return (
-    <div className="fixed top-4 right-4 z-10">
+    <div ref={menuRef} className="fixed top-4 right-4 z-10">
       <motion.div
         className="relative w-40 h-70 bg-foreground rounded-2xl"
         variants={variants}

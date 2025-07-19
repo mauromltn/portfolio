@@ -2,5 +2,5 @@ export const navLinks = [
    { href: "/", title: "Home" },
    { href: "/#about", title: "About" },
    { href: "/projects", title: "Projects" },
-   { href: "/contact", title: "Contact" }
+   { href: "mailto:dev.montane@gmail.com", title: "Contact" }
 ]

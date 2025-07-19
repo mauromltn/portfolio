@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 export interface ProjectCardProps {
   index: number;
   title: string;
@@ -12,4 +14,10 @@ export interface ProjectModalProps {
     src: string;
     color: string;
   }>;
+}
+export interface ProjectDetails {
+  index: number;
+  mockup: StaticImageData;
+  title: string;
+  type: string;
 }

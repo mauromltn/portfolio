@@ -9,6 +9,7 @@ export default function Button({isActive, setIsActive}: ButtonProps) {
   return (
    <div
     onClick={() => setIsActive(!isActive)}
+    
     className="absolute top-0 right-0 overflow-hidden w-15 h-6.5 text-xs rounded-full cursor-pointer"
   >
     <motion.div
