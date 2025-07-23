@@ -1,57 +1,80 @@
 import { navLinks } from '@/data/navLinks'
 import { motion } from 'motion/react'
 
-const perspective = {
-   initial: {
-      opacity: 0,
-      rotateX: 90,
-      translateY: 40,
-      translateX: -20,
-   },
-   
-   enter: (i: number) => ({
-      opacity: 1,
-      rotateX: 0,
-      translateY: 0,
-      translateX: 0,
-      transition: {
-         duration: 0.65,
-         opacity: {duration: 0.35},
-         delay: 0.3 + (i * 0.1),
-         ease: [0.215, 0.61, 0.355, 1],
-      },
-   }),
-
-   exit: {
-      opacity: 0
-   }
-}
-
 export default function Nav() {
-  return (
-    <div className="flex items-center justify-center h-full px-5 text-white text-xl">
-      <div className="top">
-         {
-            navLinks.map((link, i) => (
-               <div key={i} className="perspective-normal perspective-origin-right">
+   return (
+      <div className="flex items-center h-full p-7 text-xl sm:text-sm text-white">
+         <div className="space-y-4 sm:space-y-3 w-full">
+            {
+               navLinks.map((link, i) => (
                   <motion.div
-                     custom={i}
-                     className="flex py-2"
-                     variants={perspective}
-                     initial="initial"
-                     animate="enter"
-                     exit="exit"
+                     key={i}
+                     className="relative overflow-hidden"
+                     initial='initial'
+                     whileHover='hovered'
+                     exit={{ opacity: 0 }}
                   >
-                     <a href={link.href}>{link.title}</a>
+                     <a href={link.href} className="block w-full">
+                        <motion.div
+                           className="flex"
+                           variants={{
+                              initial: {},
+                              hovered: {}
+                           }}
+                        >
+                           {link.title.split('').map((letter, letterIndex) => (
+                              <motion.span
+                                 key={letterIndex}
+                                 variants={{
+                                    initial: { y: 0 },
+                                    hovered: { y: '-100%' },
+                                 }}
+                                 transition={{
+                                    duration: 0.45,
+                                    ease: [0.33, 1, 0.68, 1],
+                                    delay: letterIndex * 0.03
+                                 }}
+                              >
+                                 {/*In case of spaces causing brakes in the animation this includes them */}
+                                 {letter === ' ' ? '\u00A0' : letter}
+                              </motion.span>
+                           ))}
+                        </motion.div>
+
+                        <motion.div
+                           className="absolute inset-0 flex"
+                           variants={{
+                              initial: {},
+                              hovered: {}
+                           }}
+                        >
+                           {link.title.split('').map((letter, letterIndex) => (
+                              <motion.span
+                                 key={letterIndex}
+                                 variants={{
+                                    initial: { y: '100%' },
+                                    hovered: { y: 0 }
+                                 }}
+                                 transition={{
+                                    duration: 0.45,
+                                    ease: [0.33, 1, 0.68, 1],
+                                    delay: letterIndex * 0.03
+                                 }}
+                              >
+                                 {/*In case of spaces causing brakes in the animation this includes them */}
+                                 {letter === ' ' ? '\u00A0' : letter}
+                              </motion.span>
+                           ))}
+                        </motion.div>
+                     </a>
                   </motion.div>
-               </div>
-            ))
-         }
-      </div>
+               ))
+            }
+         </div>
 
-      <div className="bottom">
+         <div className="bottom">
 
+         </div>
       </div>
-    </div>
-  )
+   )
 }

@@ -46,8 +46,8 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
             <div className="relative text-sm flex items-center mt-2.5 sm:mt-4 transition-all duration-300 ease-in-out overflow-hidden">
                <motion.div
                   variants={{
-                     initial: { y: 0, opacity: 1 },
-                     hovered: { y: '-100%', opacity: 0 },
+                     initial: { y: 0 },
+                     hovered: { y: '-100%' },
                   }}
                   transition={{
                      duration: 0.45,
@@ -63,8 +63,8 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
 
                <motion.div
                   variants={{
-                     initial: { y: '100%', opacity: 0 },
-                     hovered: { y: 0, opacity: 1 }
+                     initial: { y: '100%' },
+                     hovered: { y: 0 }
                   }}
                   transition={{
                      duration: 0.45,
