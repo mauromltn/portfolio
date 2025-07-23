@@ -4,7 +4,6 @@ import { ProjectDetails } from '@/lib/types';
 import { Minus } from 'lucide-react';
 import { useState, useEffect } from "react"
 import { motion } from "motion/react"
-import { exit } from 'process';
 
 export default function DetailsCard({ index, mockup, title, type, link }: ProjectDetails) {
 
