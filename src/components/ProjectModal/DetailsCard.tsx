@@ -43,7 +43,7 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
                   className='object-cover group-hover:scale-105 transition-transform duration-600 ease-[cubic-bezier(0.33,1,0.68,1)]'
                />
             </div>
-            <div className="relative flex items-center mt-4 transition-all duration-300 ease-in-out overflow-hidden">
+            <div className="relative text-sm flex items-center mt-2.5 sm:mt-4 transition-all duration-300 ease-in-out overflow-hidden">
                <motion.div
                   variants={{
                      initial: { y: 0, opacity: 1 },
@@ -55,10 +55,10 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
                   }}
                   className='flex items-center'
                >
-                  <p className='text:sm lg:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{title}</p>
+                  <p className='sm:text-base xl:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{title}</p>
                   <Minus strokeWidth={1} className='lg:hidden transition-all duration-300 ease-in-out' />
                   <Minus strokeWidth={2} className='hidden lg:block transition-all duration-300 ease-in-out' />
-                  <p className='text:sm lg:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{type}</p>
+                  <p className='sm:text-base xl:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{type}</p>
                </motion.div>
 
                <motion.div
@@ -72,10 +72,10 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
                   }}
                   className='absolute inset-0 flex items-center'
                >
-                  <p className='text:sm lg:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{title}</p>
+                  <p className='sm:text-base xl:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{title}</p>
                   <Minus strokeWidth={1} className='lg:hidden transition-all duration-300 ease-in-out' />
                   <Minus strokeWidth={2} className='hidden lg:block transition-all duration-300 ease-in-out' />
-                  <p className='text:sm lg:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{type}</p>
+                  <p className='sm:text-base xl:text-lg lg:font-medium transition-all duration-300 ease-in-out'>{type}</p>
                </motion.div>
             </div>
          </motion.div>
