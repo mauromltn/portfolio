@@ -1,5 +1,5 @@
 import { navLinks } from '@/data/navLinks'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const perspective = {
    initial: {

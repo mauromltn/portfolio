@@ -40,13 +40,13 @@ export default function Footer() {
                         <Link href="/" className="block text-stone-600 hover:text-stone-900 transition-colors">
                            Home
                         </Link>
-                        <Link href="/about" className="block text-stone-600 hover:text-stone-900 transition-colors">
+                        <Link href="/#about" className="block text-stone-600 hover:text-stone-900 transition-colors">
                            About
                         </Link>
                         <Link href="/projects" className="block text-stone-600 hover:text-stone-900 transition-colors">
                            Projects
                         </Link>
-                        <Link href="/contact" className="block text-stone-600 hover:text-stone-900 transition-colors">
+                        <Link href="mailto:dev.montane@gmail.com" className="block text-stone-600 hover:text-stone-900 transition-colors">
                            Contact
                         </Link>
                      </nav>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { ProjectModalProps } from '../../lib/types'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import { gsap } from 'gsap'
 
 const scaleAnimation = {
