@@ -27,7 +27,7 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
       <>
          <motion.div
             onClick={() => window.open(`${link}`, '_blank')}
-            className='group w-full rounded-xl transition-all duration-300 ease-in-out cursor-pointer'
+            className='group w-full transition-all duration-300 ease-in-out cursor-pointer'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             initial='initial'
@@ -50,7 +50,7 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
                      hovered: { y: '-100%', opacity: 0 },
                   }}
                   transition={{
-                     duration: 0.3,
+                     duration: 0.45,
                      ease: [0.33, 1, 0.68, 1]
                   }}
                   className='flex items-center'
@@ -67,7 +67,7 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
                      hovered: { y: 0, opacity: 1 }
                   }}
                   transition={{
-                     duration: 0.3,
+                     duration: 0.45,
                      ease: [0.33, 1, 0.68, 1]
                   }}
                   className='absolute inset-0 flex items-center'

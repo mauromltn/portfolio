@@ -5,32 +5,32 @@ import portfolioMockup from '../../public/projects/portfolio-mockup.webp';
 
 export const projectsData = [
    {
-      title: "CineMood",
-      type: "Web Application",
+      title: "CINEMOOD",
+      type: "WEB APPLICATION",
       src: "/projects/cinemood.png",
       mockup: cinemoodMockup,
       color: "#f1faee",
       link: "https://cinemood.it"
    },
    {
-      title: "Trasvelo",
-      type: "Travel App",
+      title: "TRASVELO",
+      type: "TRAVEL APP",
       src: "/projects/trasvelo.png",
       mockup: trasveloMockup,
       color: "#a8dadc",
       link: "https://trasvelo.vercel.app"
    },
    {
-      title: "Planix",
-      type: "Productivity App",
+      title: "PLANIX",
+      type: "PRODUCTIVITY APP",
       src: "/projects/planix.png",
       mockup: planixMockup,
       color: "#e63946",
       link: "/notavailable"
    },
    {
-      title: "Portfolio",
-      type: "Portfolio Website",
+      title: "PORTFOLIO",
+      type: "PORTFOLIO WEBSITE",
       src: "/projects/portfolio.png",
       mockup: portfolioMockup,
       color: "#e5e5e5",

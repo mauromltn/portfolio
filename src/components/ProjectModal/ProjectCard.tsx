@@ -8,7 +8,7 @@ export default function ProjectCard({ index, title, link, setModal }: ProjectCar
          onMouseLeave={() => setModal({ active: false, index })}
          onClick={() => window.open(`${link}`, '_blank')}
       >
-         <h2 className="text-2xl lg:text-6xl group-hover:translate-x-2.5 duration-200 group-active:translate-x-2.5">{title}</h2>
+         <h2 className="text-xl lg:text-5xl group-hover:translate-x-2.5 duration-200 group-active:translate-x-2.5">{title}</h2>
          <p className='text-xs lg:text-base font-light group-hover:-translate-x-2.5 duration-200 group-active:-translate-x-2.5'>Design & Development</p>
       </div>
    )
