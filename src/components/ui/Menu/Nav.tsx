@@ -1,5 +1,6 @@
 import { navLinks } from '@/data/navLinks'
 import { motion } from 'motion/react'
+import ThemeButton from '@/components/ui/ThemeButton'
 
 export default function Nav() {
    return (
@@ -72,8 +73,8 @@ export default function Nav() {
             }
          </div>
 
-         <div className="bottom">
-
+         <div className="flex items-end h-full mb-7">
+            <ThemeButton />
          </div>
       </div>
    )

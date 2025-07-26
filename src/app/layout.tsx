@@ -6,6 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import Menu from "@/components/ui/Menu/Menu";
 import Footer from "@/components/ui/Footer";
 import { ReactLenis } from 'lenis/react'
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Mauro Montane",
@@ -29,11 +30,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+    >
       <body className={`${inter.className} antialiased`}>
         <ReactLenis root />
         <Menu />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
         <Footer />
         <Analytics />
         <SpeedInsights />
