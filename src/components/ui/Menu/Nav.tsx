@@ -1,10 +1,10 @@
 import { navLinks } from '@/data/navLinks'
 import { motion } from 'motion/react'
-import ThemeButton from '@/components/ui/ThemeButton'
+import ThemeToggle from '@/components/ui/ThemeButton'
 
 export default function Nav() {
    return (
-      <div className="flex items-center h-full p-7 text-xl sm:text-sm text-white">
+      <div className="flex items-center h-full p-7 text-xl sm:text-sm text-[var(--background)]">
          <div className="space-y-4 sm:space-y-3 w-full">
             {
                navLinks.map((link, i) => (
@@ -74,7 +74,7 @@ export default function Nav() {
          </div>
 
          <div className="flex items-end h-full mb-7">
-            <ThemeButton />
+            <ThemeToggle />
          </div>
       </div>
    )

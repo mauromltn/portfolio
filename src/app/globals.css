@@ -7,23 +7,30 @@
 :root {
   --background: #F0EFED;
   --foreground: #111111;
+  --card-bg: #ffffff;
+  --card-text: #111111;
+  --border-color: #e5e5e5;
+  --text-muted: #737373;
+  --green-text: #088046;
 }
 
-@theme inline{
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+.dark {
+  --background: #000;
+  --foreground: #F0EFED;
+  --card-bg: #262626;
+  --card-text: #fafafa;
+  --border-color: #404040;
+  --text-muted: #a3a3a3;
+  --green-text: #34d399;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
   
   ::selection {
-    background-color: #1e1e1e;
+    background-color: var(--foreground);
     color: var(--background);
   }
-}
-
-.menu-button {
-  @apply w-full h-full uppercase flex items-center justify-center;
 }

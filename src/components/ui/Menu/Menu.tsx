@@ -31,7 +31,7 @@ export default function Menu() {
       className="fixed pl-7.5 top-8 right-5 z-10"
     >
       <motion.div
-        className="relative w-68 h-62 sm:w-55 sm:h-49 bg-foreground"
+        className="relative w-68 h-62 sm:w-55 sm:h-49 bg-[var(--foreground)]"
         variants={variants}
         initial="closed"
         animate={isActive ? "open" : "closed"}

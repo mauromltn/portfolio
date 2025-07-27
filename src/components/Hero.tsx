@@ -8,14 +8,14 @@ export default function Hero() {
          <RevealAnimation className="flex flex-col sm:flex-row gap-9 sm:items-center">
             <a
                href="mailto:dev.montane@gmail.com"
-               className='w-fit bg-white border border-neutral-300 text-sm sm:text-base font-semibold text-center py-4.5 px-5 rounded-full hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-hover duration-200 ease-out'
+               className='w-fit bg-[var(--card-bg)] border border-[var(--border-color)] text-sm sm:text-base font-semibold text-[var(--card-text)] text-center py-4.5 px-5 rounded-full hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out'
             >
                Get in Touch
             </a>
 
             <div className='flex gap-2 sm:gap-3 items-center'>
                <div className='bg-[#12C971] rounded-full w-2.5 h-2.5 sm:w-3 sm:h-3'></div>
-               <p className='text-[#088046] font-medium'>Open to New Opportunities</p>
+               <p className='text-[var(--green-text)] font-medium'>Open to New Opportunities</p>
             </div>
          </RevealAnimation>
       </main>

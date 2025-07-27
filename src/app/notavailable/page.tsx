@@ -16,14 +16,14 @@ export default function NotAvailable() {
                </p>
             </div>
 
-            <div className="bg-white border border-neutral-300 rounded-2xl p-6 text-left">
+            <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl p-6 text-left">
                <div className="flex items-start gap-4">
                   <div className="bg-yellow-100 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   </div>
                   <div>
                      <h3 className="text-lg font-medium mb-2">Stato del Progetto</h3>
-                     <p className="text-foreground/70 text-sm sm:text-base">
+                     <p className="text-[var(--text-muted)] text-sm sm:text-base">
                         Il progetto è attualmente in produzione e sarà disponibile presto.
                      </p>
                   </div>
@@ -33,14 +33,14 @@ export default function NotAvailable() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
                <Link 
                   href="/"
-                  className='bg-white border border-neutral-300 text-sm font-semibold p-4 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ease-out'
+                  className='bg-[var(--card-bg)] border border-[var(--border-color)] text-sm font-semibold text-[var(--card-text)] p-4 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ease-out'
                >
                   Torna alla Home
                </Link>
                
                <Link 
                   href="/projects"
-                  className='text-sm sm:text-base font-medium py-4 px-6 rounded-full text-foreground/70 hover:text-foreground transition-colors duration-200'
+                  className='text-sm sm:text-base font-medium py-4 px-6 rounded-full text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors duration-200'
                >
                   Altri Progetti
                </Link>

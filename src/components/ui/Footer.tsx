@@ -7,7 +7,7 @@ import { QuickReveal } from "./ViewReveal/QuickReveal";
 export default function Footer() {
    return (
       <QuickReveal>
-         <footer className="border-t border-stone-200">
+         <footer className="border-t border-[var(--border-color)]">
             <div className="max-w-6xl mx-auto px-6 py-16">
                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                   {/* Brand Section */}
@@ -19,15 +19,15 @@ export default function Footer() {
                               alt="Logo"
                               width={30}
                               height={30}
-                              className="border-2 border-black rounded-full"
+                              className="border-2 border-[var(--foreground)] rounded-full"
                            />
-                           <h3 className="text-xl md:text-2xl font-medium text-stone-900">Mauro Montane</h3>
+                           <h3 className="text-xl md:text-2xl font-medium text-[var(--foreground)]">Mauro Montane</h3>
                         </div>
-                        <p className="text-stone-600 text-base md:text-lg leading-relaxed max-w-md">
+                        <p className="text-[var(--text-muted)] text-base md:text-lg leading-relaxed max-w-md">
                            Building responsive, high-performance web applications with clean code and exceptional user experiences.
                         </p>
                      </div>
-                     <div className="flex items-center gap-1 text-sm text-stone-500">
+                     <div className="flex items-center gap-1 text-sm text-[var(--text-muted)]">
                         <div className="w-2 h-2 bg-[#12C971] rounded-full"></div>
                         <span className="">Open to New Opportunities</span>
                      </div>
@@ -35,18 +35,18 @@ export default function Footer() {
 
                   {/* Navigation */}
                   <div>
-                     <h4 className="text-stone-900 font-semibold mb-6">Navigation</h4>
+                     <h4 className="text-[var(--foreground)] font-semibold mb-6">Navigation</h4>
                      <nav className="space-y-4">
-                        <Link href="/" className="block text-stone-600 hover:text-stone-900 transition-colors">
+                        <Link href="/" className="block text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors">
                            Home
                         </Link>
-                        <Link href="/#about" className="block text-stone-600 hover:text-stone-900 transition-colors">
+                        <Link href="/#about" className="block text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors">
                            About
                         </Link>
-                        <Link href="/projects" className="block text-stone-600 hover:text-stone-900 transition-colors">
+                        <Link href="/projects" className="block text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors">
                            Projects
                         </Link>
-                        <Link href="mailto:dev.montane@gmail.com" className="block text-stone-600 hover:text-stone-900 transition-colors">
+                        <Link href="mailto:dev.montane@gmail.com" className="block text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors">
                            Contact
                         </Link>
                      </nav>
@@ -54,11 +54,11 @@ export default function Footer() {
 
                   {/* Connect */}
                   <div>
-                     <h4 className="text-stone-900 font-semibold mb-6">Connect</h4>
+                     <h4 className="text-[var(--foreground)] font-semibold mb-6">Connect</h4>
                      <div className="space-y-4">
                         <Link
                            href="mailto:dev.montane@gmail.com"
-                           className="flex items-center gap-3 text-stone-600 hover:text-stone-900 transition-colors"
+                           className="flex items-center gap-3 text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors"
                            target="_blank"
                         >
                            <Mail className="w-4 h-4" />
@@ -66,7 +66,7 @@ export default function Footer() {
                         </Link>
                         <Link
                            href="https://linkedin.com/in/mauromontane"
-                           className="flex items-center gap-3 text-stone-600 hover:text-stone-900 transition-colors"
+                           className="flex items-center gap-3 text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors"
                            target="_blank"
                         >
                            <Linkedin className="w-4 h-4" />
@@ -74,7 +74,7 @@ export default function Footer() {
                         </Link>
                         <Link
                            href="https://github.com/mauromltn"
-                           className="flex items-center gap-3 text-stone-600 hover:text-stone-900 transition-colors"
+                           className="flex items-center gap-3 text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors"
                            target="_blank"
                         >
                            <Github className="w-4 h-4" />
@@ -82,7 +82,7 @@ export default function Footer() {
                         </Link>
                         <Link
                            href="https://threads.net/mauromontane"
-                           className="flex items-center gap-3 text-stone-600 hover:text-stone-900 transition-colors"
+                           className="flex items-center gap-3 text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors"
                            target="_blank"
                         >
                            <BsThreads className="w-4 h-4" />
@@ -93,8 +93,8 @@ export default function Footer() {
                </div>
 
                {/* Bottom Section */}
-               <div className="pt-8 border-t border-stone-200">
-                  <p className="text-stone-500 text-sm">© 2025 Portfolio. All rights reserved.</p>
+               <div className="pt-8 border-t border-[var(--border-color)]">
+                  <p className="text-[var(--text-muted)] text-sm">© 2025 Portfolio. All rights reserved.</p>
                </div>
             </div>
          </footer>

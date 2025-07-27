@@ -17,8 +17,8 @@ export default function Button({isActive, setIsActive}: ButtonProps) {
       animate={{top: isActive ? '-100%' : '0%'}}
       transition={{duration: 0.5, ease: [0.76, 0, 0.24, 1]}}
     >
-      <div className="menu-button bg-foreground text-white">menu</div>
-      <div className="menu-button bg-background text-black">close</div>
+      <div className="w-full h-full uppercase flex items-center justify-center bg-[var(--foreground)] text-[var(--background)]">menu</div>
+      <div className="w-full h-full uppercase flex items-center justify-center bg-[var(--background)] text-[var(--foreground)]">close</div>
     </motion.div>
    </div>
   )

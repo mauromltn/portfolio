@@ -35,12 +35,12 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       suppressHydrationWarning
     >
       <body className={`${inter.className} antialiased`}>
-        <ReactLenis root />
-        <Menu />
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <ReactLenis root />
+          <Menu />
           {children}
+          <Footer />
         </ThemeProvider>
-        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>

@@ -2,16 +2,15 @@
 import { Contrast } from 'lucide-react'
 import { useTheme } from 'next-themes';
 
-export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
-   const toggleTheme = () => {
-      setTheme(theme === 'dark' ? 'light' : 'dark')
-   }
+export default function ThemeButton() {
+  const { setTheme, theme } = useTheme()
+  
   return (
     <div
-      onClick={toggleTheme}
-      className='cursor-pointer'
-   >
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      className='cursor-pointer hover:opacity-70 transition-opacity'
+      title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+    >
       <Contrast size={20} />
     </div>
   )
