@@ -1,5 +1,4 @@
 'use client'
-import { th } from 'framer-motion/client';
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes';
 
