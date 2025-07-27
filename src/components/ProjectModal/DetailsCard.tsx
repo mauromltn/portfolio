@@ -82,7 +82,7 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
 
          {/* Mouse follow text */}
          <motion.div
-            className="fixed z-10 bg-black text-[var(--background)] text-xs px-2 py-1.5 rounded-full whitespace-nowrap pointer-events-none"
+            className="fixed z-10 bg-[var(--foreground)] text-[var(--background)] text-xs px-2 py-1.5 rounded-full whitespace-nowrap pointer-events-none"
             style={{
                left: mousePosition.x,
                top: mousePosition.y - 22,
