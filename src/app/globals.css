@@ -15,11 +15,11 @@
 }
 
 .dark {
-  --background: #000;
+  --background: #121212;
   --foreground: #F0EFED;
-  --card-bg: #262626;
+  --card-bg: #1a1a1a;
   --card-text: #fafafa;
-  --border-color: #404040;
+  --border-color: #2a2a2a;
   --text-muted: #a3a3a3;
   --green-text: #34d399;
 }
