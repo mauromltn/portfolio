@@ -13,7 +13,7 @@ export default function Projects() {
       <>
          <RevealAnimation className='w-full px-5 md:max-w-220 lg:w-250 m-auto mt-30 mb-20 lg:mt-50 select-none'>
             {
-               projectsData.map((project, index) => {
+               projectsData.slice(0, 4).map((project, index) => { // Limit to 4 projects
                   return (
                      <ProjectCard
                         key={index}

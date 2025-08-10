@@ -26,7 +26,7 @@ export default function DetailsCard({ index, mockup, title, type, link }: Projec
    return (
       <>
          <motion.div
-            onClick={() => window.open(`${link}`, '_blank')}
+            onClick={() => link !== '/not-available' ? window.open(`${link}`) : (window.location.href = '/not-available')}
             className='group w-full transition-all duration-300 ease-in-out cursor-pointer'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

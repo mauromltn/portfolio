@@ -10,9 +10,9 @@ export default function NotAvailable() {
             </div>
 
             <div>
-               <h1 className="text-3xl sm:text-5xl font-medium mb-6">Progetto in Sviluppo</h1>
+               <h1 className="text-3xl sm:text-5xl font-medium mb-6">Project Under Development</h1>
                <p className="text-foreground/70 text-base sm:text-lg">
-                  Questo progetto non è ancora completato e si trova attualmente in fase di sviluppo.
+                  This project is not yet completed and is currently under development.
                </p>
             </div>
 
@@ -22,9 +22,9 @@ export default function NotAvailable() {
                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   </div>
                   <div>
-                     <h3 className="text-lg font-medium mb-2">Stato del Progetto</h3>
+                     <h3 className="text-lg font-medium mb-2">Project Status</h3>
                      <p className="text-[var(--text-muted)] text-sm sm:text-base">
-                        Il progetto è attualmente in produzione e sarà disponibile presto.
+                        The project is currently in production and will be available soon.
                      </p>
                   </div>
                </div>
@@ -35,14 +35,14 @@ export default function NotAvailable() {
                   href="/"
                   className='bg-[var(--card-bg)] border border-[var(--border-color)] text-sm font-semibold text-[var(--card-text)] p-4 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ease-out'
                >
-                  Torna alla Home
+                  Back to Home
                </Link>
                
                <Link 
                   href="/projects"
                   className='text-sm sm:text-base font-medium py-4 px-6 rounded-full text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors duration-200'
                >
-                  Altri Progetti
+                  Other Projects
                </Link>
             </div>
          </div>
