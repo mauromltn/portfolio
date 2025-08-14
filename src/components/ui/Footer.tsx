@@ -21,7 +21,7 @@ export default function Footer() {
                               height={30}
                               className="border-2 border-[var(--foreground)] rounded-full"
                            />
-                           <h3 className="text-xl md:text-2xl font-medium text-[var(--foreground)]">Mauro Montane</h3>
+                           <span className="text-xl md:text-2xl font-medium text-[var(--foreground)]">Mauro Montane</span>
                         </div>
                         <p className="text-[var(--text-muted)] text-base md:text-lg leading-relaxed max-w-md">
                            Building responsive, high-performance web applications with clean code and exceptional user experiences.
