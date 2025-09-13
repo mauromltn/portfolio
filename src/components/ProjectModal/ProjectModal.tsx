@@ -43,15 +43,10 @@ export default function ProjectModal({ modal, projectsData }: ProjectModalProps)
         id='project-modal'
       >
         <div style={{ top: index * -100 + "%" }} className='absolute w-full h-full transition-[top-cubic-bezier(0.76,0,024,1)] duration-500'>
-          {
-            projectsData.map((project, index) => {
+          {projectsData.map((project, index) => {
               const { src, color } = project
               return (
-                <div
-                  key={`modal_${index}`}
-                  style={{ backgroundColor: color }}
-                  className='relative flex items-center justify-center h-full'
-                >
+                <div key={`modal_${index}`} style={{ backgroundColor: color }} className='relative flex items-center justify-center h-full'>
                   <Image
                     key={index}
                     src={src}
@@ -62,8 +57,7 @@ export default function ProjectModal({ modal, projectsData }: ProjectModalProps)
                   />
                 </div>
               )
-            })
-          }
+            })}
         </div>
       </motion.div>
 

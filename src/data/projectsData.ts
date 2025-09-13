@@ -11,7 +11,7 @@ export const projectsData = [
       src: "/projects/pamiro.webp",
       mockup: pamiroMockup,
       color: "#761010",
-      link: "/not-available"
+      link: "https://pamiro-restaurant.vercel.app"
    },
    {
       title: "CINEMOOD",
